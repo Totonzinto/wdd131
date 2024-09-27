@@ -1,11 +1,4 @@
+const currentDate = new Date();
+const lastModified = `${currentDate.toLocaleDateString()} ${currentDate.toLocaleTimeString()}`;
 
-const full = document.querySelector("#full");
-
-const today = new Date();
-
-full.innerHTML = `last modified <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
+document.write(`Last Modified: ${lastModified}`);
