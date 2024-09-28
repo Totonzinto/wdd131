@@ -1,0 +1,145 @@
+header {
+    background-color: rgb(16, 12, 78);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    color: rgb(219, 219, 219);
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: gray;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+nav.active {
+    display: flex;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 0;
+    font-family: Roboto, san;
+    font-weight: bold;
+    color: black;
+    font-size: larger;
+}
+
+nav a:hover {
+    background-color: rgb(69, 68, 68);
+    color: white;
+    transition: .5s;
+}
+
+nav a.active::before {
+    content: "📍";
+    font-size: medium;
+}
+
+
+.ham-button {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.ham-button span {
+    top: 50%;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    margin: 1px;
+    position: absolute;
+    transition: .3s ease;
+
+}
+
+.ham-button span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-button span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-button.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.ham-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-button.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+#temples-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); grid-gap: 20px;place-items: center;
+}
+
+main h2 {
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 100;
+}
+
+img {
+    display: block;
+    max-width: 320px;
+    margin: 4rem;
+    width: 100%; height: auto; margin: .5rem;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: .5rem;
+    font-size: smaller;
+}
+
+footer {
+    background-color: rgb(16, 12, 78);
+    color: rgb(219, 219, 219);
+    padding: 1rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+
+#lastModified {
+    font-size: smaller;
+}
+
+#lastModified,
+#studentNameTitle {
+    color: yellow;
+}
