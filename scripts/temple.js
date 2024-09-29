@@ -1,14 +1,8 @@
-//Same footer as home page, so same JavaScript.
-const year = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
+const currentDate = new Date();
+const lastModified = `${currentDate.toLocaleDateString()} ${currentDate.toLocaleTimeString()}`;
 
-// get the current year for footer
-const date = new Date();
-year.innerHTML = date.getFullYear();
+document.write(`Last Modified: ${lastModified}`);
 
-//get the last modification date of the home page
-let lastMod = document.lastModified;
-lastModified.innerHTML = `Last Modified: ${lastMod}`;
 
 //hamburger button event
 const hamButton = document.querySelector(".ham-button");
