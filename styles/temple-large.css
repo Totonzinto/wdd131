@@ -1,14 +1,4 @@
-@media screen and (min-width: 600px) {
-    #temples-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
 
-    figure {
-        margin: 1rem;
-    }
-}
 
 @media screen and (min-width: 900px) {
     .ham-button {
