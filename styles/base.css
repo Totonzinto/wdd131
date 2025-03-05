@@ -141,9 +141,7 @@ main {
 footer {
   background-color: #393a3b;
   text-align: center;
-  padding: 1rem 0;
-  position: fixed; 
-  bottom: 0;
+  padding: 20px;
   width: 100%;
   color: white;
 }

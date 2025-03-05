@@ -1,4 +1,3 @@
-const currentDate = new Date();
-const lastModified = `${currentDate.toLocaleDateString()} ${currentDate.toLocaleTimeString()}`;
+document.getElementById("lastModified").textContent = document.lastModified;
 
-document.write(`Last Modified: ${lastModified}`);
+document.getElementById("currentyear").textContent = new Date().getFullYear();
