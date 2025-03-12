@@ -1,10 +1,12 @@
-const currentDate = new Date();
-const lastModified = `${currentDate.toLocaleDateString()} ${currentDate.toLocaleTimeString()}`;
+const year = document.querySelector("#currentyear");
+const lastModified = document.querySelector("#lastModified");
 
-document.write(`Last Modified: ${lastModified}`);
+const date = new Date();
+year.innerHTML = date.getFullYear();
 
+let lastMod = document.lastModified;
+lastModified.innerHTML = `Last Modified: ${lastMod}`;
 
-//hamburger button event
 const hamButton = document.querySelector(".ham-button");
 const menu = document.querySelector("nav");
 

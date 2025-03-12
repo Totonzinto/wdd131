@@ -1,4 +1,12 @@
+@media (min-width: 768px) {
+    #temples-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    figure {
+        margin: 1rem;
+    }
+}
 
 @media screen and (min-width: 900px) {
     .ham-button {
