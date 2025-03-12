@@ -99,11 +99,17 @@ nav a.active::before {
 main {
     width: 100%;
     margin: auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #temples-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); grid-gap: 20px;place-items: center;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 main h2 {
@@ -116,7 +122,9 @@ img {
     display: block;
     max-width: 320px;
     margin: 4rem;
-    width: 100%; height: auto; margin: .5rem;
+    width: 100%; 
+    height: auto; 
+    margin: .5rem;
 }
 
 figcaption {
@@ -141,5 +149,5 @@ footer {
 
 #lastModified,
 #studentNameTitle {
-    color: yellow;
+    color: rgba(241, 241, 233, 0.874);
 }

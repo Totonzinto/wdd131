@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+    #temples-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure {
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .ham-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        width: 500px;
+        background-color: rgb(16, 12, 78);
+    }
+
+    nav a {
+        color: rgb(219, 219, 219);
+    }
+
+    nav a:hover {
+        transform: scale(1.5);
+        background-color: transparent;
+    }
+}
