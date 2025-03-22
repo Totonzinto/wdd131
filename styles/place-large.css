@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .weather .weather-icon::after {
+        content: url('weather-icon.svg'); /* Use SVG icon on large screens */
+    }
+}
