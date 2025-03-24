@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgba(229, 15, 15, 0.014);
+    --primary-color:#e2e6e4ea;
     --secondary-color: #0a6833;
     --background-color: #0e8835;
     --text-color: #333;
@@ -11,10 +11,11 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    
 }
 
 header {
-    background: var(--primary-color);
+    background: #e2e6e4ea;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -22,17 +23,21 @@ header {
 }
 
 main {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
-
+ 
+.hero {
+    width: 100%;
+    height: auto;
+}
+ 
 .hero img {
     width: 100%;
     height: auto;
     display:flex;
-    max-width: 1000px;
 }
 
 section {
