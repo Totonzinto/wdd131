@@ -4,12 +4,18 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    section {
+        width: 45%;
+        max-width: 300px;
+    }
+
     .data {
         position: absolute;
         left: 50px;
         top: 200px;
     }
- 
+
     .weather {
         position: absolute;
         right: 50px;
@@ -21,14 +27,10 @@
         padding: 20px;
         color: white;
     }
-    section {
-        width: 45%;
-        max-width: 300px;
-    }
 }
 
 @media (min-width: 1024px) {
     .weather .weather-icon::after {
-        content: url('icon.svg'); 
+        content: url('weather-icon.svg'); /* Use SVG icon on large screens */
     }
 }

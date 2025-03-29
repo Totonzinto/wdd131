@@ -16,13 +16,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("wind-chill").textContent = calculateWindChill(temperature, windSpeed);
 });
-
-
-const year = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
-
-const date = new Date();
-year.innerHTML = date.getFullYear();
-
-let lastMod = document.lastModified;
-lastModified.innerHTML = `Last Modified: ${lastMod}`;
