@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"product Review"</title>
+    <meta name="description" content="A page designed for week 5 assignment named product-review-form">
+    <meta name="author" content="Chioma Nwosu">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Product Review
+        </h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="product-review-form">
+
+            <label>Product Name<span class="required-asterisk">*</span> <select name="product-name" id="product-name"
+                    required>
+                    <option disabled selected value="">Select a product... &#9662;</option>
+                </select>
+            </label>
+
+            <div>Overall Rating<span class="required-asterisk">*</span></div>
+            <label><input type="radio" name="overallRating" id="one-star" required>&star;</label>
+            <label><input type="radio" name="overallRating" id="two-stars" required>&star;&star;</label>
+            <label><input type="radio" name="overallRating" id="three-stars" required>&star;&star;&star;</label>
+            <label><input type="radio" name="overallRating" id="four-stars" required>&star;&star;&star;&star;</label>
+            <label><input type="radio" name="overallRating" id="five-stars" required>&star;&star;&star;&star;&star;</label>
+
+            <label>Date of Installation<span class="required-asterisk">*</span><input type="date"
+                    id="date-of-installation" name="date-of-installation" required>
+            </label>
+
+            <div>Which features did you find useful in this product?<br><span class="italic-text">(Check all that apply)</span></div>
+            <label><input type="checkbox" name="design" value="design" id="design">Design</label>
+            <label><input type="checkbox" name="durability" value="durability" id="durability">Durability</label>
+            <label><input type="checkbox" name="ease-of-use" value="ease-of-use" id="ease-of-use">Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="performance" id="performance">Performance</label>
+
+            <label>Written Review<textarea name="written-review" id="written-review" rows="10"></textarea></label>
+            <label>Your Name <input type="text" name="user-name" id="user-name"></label>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Chioma Nwosu, Nigeria.
+        </p>
+        <p id="lastModified"></p>
+      </footer>
+</body>
+</html>
