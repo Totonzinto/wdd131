@@ -1,0 +1,143 @@
+.contact-section {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #383737;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  .nav-links li a, .nav-links button {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .nav-links button {
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+  }
+  img.logo{
+    
+    width: 50px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;   
+  }
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color:  #383737;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #fff;
+  }
+ 
+  body.dark-theme {
+    background-color: #111;
+    color: #eee;
+  }
+  
+  nav, footer {
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-theme nav, 
+  body.dark-theme footer {
+    background-color: #222;
+  }
+  
+  body.dark-theme a {
+    color: #81cfff;
+  }
+  
+  body.dark-theme button {
+    background-color: #444;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-section {
+      padding: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }  
+  }
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .nav-links li a, .nav-links button {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.9rem;
+    }
+  }

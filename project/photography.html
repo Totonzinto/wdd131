@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive and accessible website with gallery, about, and contact form pages">
+  <title>My Photography Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/photography.css">
+  <link rel="icon" href="images/crc.jpg" type="image/jpg">
+  <script defer src="scripts/photography.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Photography Website</h1>
+    <nav class="navbar">
+      <img src="images/crc.jpg" alt="photography logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="photography.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="theme-toggle">Toggle Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="home"></div>
+      <img src="images/hero-image.jpg" alt="Hero image" loading="lazy">
+
+    <div class="features">
+      <div class="feature">
+        <img src="images/features.avif" alt="Feature 1" loading="lazy">
+        <p>High-quality Photography</p>
+      </div>
+      <div class="feature">
+        <img src="images/creative.avif" alt="Feature 2" loading="lazy">
+        <p>Creative Portfolio</p>
+      </div>
+      <div class="feature">
+        <img src="images/client.avif" alt="Feature 3" loading="lazy">
+        <p>Client Focused</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+        &copy; <span id="currentyear"></span> Chioma Nwosu, Nigeria.
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

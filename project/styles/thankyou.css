@@ -1,0 +1,35 @@
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fafafa;
+  }
+
+  .thank-you h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+
+  .thank-you p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+
+  .thank-you a {
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .thank-you a:hover {
+    background-color: #555;
+  }

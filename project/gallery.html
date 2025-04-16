@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive and accessible website with gallery, about, and contact form pages">
+  <title>Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="icon" href="images/crc.jpg" type="image/jpg">
+  <script defer src="scripts/gallery.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="images/crc.jpg" alt="photography logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="photography.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="theme-toggle">Toggle Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Photo Gallery</h1>
+  
+    <div id="crc-photo">
+      <figure>
+        <img src="images/image1.jpg" alt="Gallery photo 1" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/image-fine.jpg" alt="Gallery photo 2" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/image2.jpg" alt="Gallery photo 3" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/image-fun.jpg" alt="Gallery photo 4" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery.jpg" alt="Gallery photo 5" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/image.jpg" alt="Gallery photo 6" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/hand-image.jpg" alt="Gallery photo 7" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/princess1.jpg" alt="Gallery photo 7" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/princess.jpg" alt="Gallery photo 7" loading="lazy" />
+        <figcaption>crc photo</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+        &copy; <span id="currentyear"></span> Chioma Nwosu, Nigeria.
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

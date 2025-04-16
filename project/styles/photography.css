@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1{
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+  }
+  
+  body {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    padding: 0 1rem;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body.dark-theme {
+    background-color: #111;
+    color: #eee;
+  }
+  
+  nav, footer {
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-theme nav, 
+  body.dark-theme footer {
+    background-color: #222;
+  }
+  
+  body.dark-theme a {
+    color: #81cfff;
+  }
+  
+  body.dark-theme button {
+    background-color: #444;
+    color: white;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  img.logo{
+    
+    width: 50px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+      
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #383737;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .nav-links li a, .nav-links button {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .nav-links button {
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  
+  .hero {
+    margin-top: 1rem;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color:  #383737;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #fff;
+  }
+  
+  /* Responsive page */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .features {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .nav-links li a, .nav-links button {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.9rem;
+    }
+  }
+  

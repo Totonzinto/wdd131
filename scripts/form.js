@@ -44,7 +44,7 @@ products.forEach(product => {
 
     productNameSelect.appendChild(option);
 
-    const year = document.querySelector("#currentyear");
+const year = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
 const date = new Date();
